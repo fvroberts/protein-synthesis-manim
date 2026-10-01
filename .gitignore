@@ -1,0 +1,8 @@
+# Manim render output
+media/
+
+# Cached fluid simulations (regenerated on first render)
+sim_cache/
+
+__pycache__/
+*.pyc
