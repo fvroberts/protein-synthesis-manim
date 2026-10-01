@@ -754,8 +754,8 @@ class VortexStreet(Scene):
             font_size=22,
             color=INK,
         )
-        note.move_to(legend, aligned_edge=LEFT)
-        self.play(FadeOut(legend, shift=0.2 * UP), FadeIn(note, shift=0.2 * UP))
+        note.next_to(movie.image, DOWN, buff=0.25)
+        self.play(FadeOut(legend, shift=0.2 * UP), FadeOut(clock, shift=0.2 * UP), FadeIn(note, shift=0.2 * UP))
         self.wait(2.5)
         fade_all(self)
 
